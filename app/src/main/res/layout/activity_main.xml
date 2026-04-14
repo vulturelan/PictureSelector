@@ -307,14 +307,6 @@
                         android:textSize="14sp" />
 
                     <RadioButton
-                        android:id="@+id/rb_ijk_player"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="IjkPlayer"
-                        android:textColor="@color/app_color_53575e"
-                        android:textSize="14sp" />
-
-                    <RadioButton
                         android:id="@+id/rb_system_player"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

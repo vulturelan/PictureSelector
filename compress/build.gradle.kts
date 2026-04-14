@@ -43,17 +43,17 @@ var ossrhPassword = "" //sonatype密码
 val localProperties = project.rootProject.file("local.properties")
 
 if (localProperties.exists()) {
-    println("Found secret props file, loading props")
-    val properties = Properties()
-
-    InputStreamReader(FileInputStream(localProperties), Charsets.UTF_8).use { reader ->
-        properties.load(reader)
-    }
-    signingKeyId = properties.getProperty("signingKeyId")
-    signingPassword = properties.getProperty("signingPassword")
-    secretKeyRingFile = properties.getProperty("secretKeyRingFile")
-    ossrhUsername = properties.getProperty("ossrhUsername")
-    ossrhPassword = properties.getProperty("ossrhPassword")
+    // println("Found secret props file, loading props")
+    // val properties = Properties()
+    //
+    // InputStreamReader(FileInputStream(localProperties), Charsets.UTF_8).use { reader ->
+    //     properties.load(reader)
+    // }
+    // signingKeyId = properties.getProperty("signingKeyId")
+    // signingPassword = properties.getProperty("signingPassword")
+    // secretKeyRingFile = properties.getProperty("secretKeyRingFile")
+    // ossrhUsername = properties.getProperty("ossrhUsername")
+    // ossrhPassword = properties.getProperty("ossrhPassword")
 
 } else {
     println("No props file, loading env vars")

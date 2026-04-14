@@ -2009,10 +2009,6 @@ public class MainActivity extends AppCompatActivity implements IBridgePictureBeh
                 videoPlayerEngine = new ExoPlayerEngine();
                 isUseSystemPlayer = false;
                 break;
-            case R.id.rb_ijk_player:
-                videoPlayerEngine = new IjkPlayerEngine();
-                isUseSystemPlayer = false;
-                break;
             case R.id.rb_system_player:
                 isUseSystemPlayer = true;
                 break;

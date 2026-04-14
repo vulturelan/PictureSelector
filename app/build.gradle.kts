@@ -15,23 +15,23 @@ android {
         versionName = "v3.11.2"
     }
 
-    signingConfigs{
-        create("pictureSelectorKey") {
-            storeFile = file("signature/picture.jks")//签名文件的path
-            storePassword = "luck888A"
-            keyAlias = "picture"
-            keyPassword = "luck888A"
-        }
-    }
+    // signingConfigs{
+    //     create("pictureSelectorKey") {
+    //         storeFile = file("signature/picture.jks")//签名文件的path
+    //         storePassword = "luck888A"
+    //         keyAlias = "picture"
+    //         keyPassword = "luck888A"
+    //     }
+    // }
     buildTypes {
         release {
             isMinifyEnabled = false
-            signingConfig = signingConfigs.getByName("pictureSelectorKey")
+            // signingConfig = signingConfigs.getByName("pictureSelectorKey")
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
         debug {
             isMinifyEnabled = false
-            signingConfig = signingConfigs.getByName("pictureSelectorKey")
+            // signingConfig = signingConfigs.getByName("pictureSelectorKey")
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
@@ -66,7 +66,6 @@ dependencies {
     implementation(project(":ucrop"))
     //implementation("io.github.liyuhaolol:ucrop:v3.11.3")
     implementation(project(":camerax"))
-    implementation(project(":ijkplayer-java"))
     implementation(project(":chooser"))
     //implementation("io.github.liyuhaolol:PictureChooser:1.0.0")
     implementation (libs.androidx.navigation.fragment.ktx)
